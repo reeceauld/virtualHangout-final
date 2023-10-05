@@ -7,7 +7,7 @@
 body{
     background-color: rgb(40, 40, 40);
     color: white;
-
+    height: 100vh;
 }
 header{
     width: 100%;
@@ -57,6 +57,9 @@ header a:visited{
     color: white;
     font-size: 30px;
     line-height: 75px;
+}
+.mainContent{
+    height: 100%;
 }
 .backgroundsContainer{
     position: absolute;
