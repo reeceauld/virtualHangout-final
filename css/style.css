@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 1920px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+body{
+    background-color: rgb(40, 40, 40);
+    color: white;
+
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(30, 30, 30);
+}
+header p{
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 100px;
+    font-size: 60px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    top: 0;
+}
+header a:visited{
+    color: white;
+}
+#agePolicy{
+    position: absolute;
+    padding-top: 20px;
+    padding-right: 25px;
+    top: 0;
+    right: 0;
+}
+#agePolicy img{
+    width: 60px;
+    height: 60px;
+}
+#banner{
+    background-color: red;
+    width: 100%;
+    height: 75px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.openingText{
+    color: white;
+    font-size: 30px;
+    line-height: 75px;
+}
+.backgroundsContainer{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    z-index: -5;
+    
+}
+.background{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    padding-bottom: 25px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.showing{
+    opacity: 1;
+    z-index: -1;
+    transition: none;
+}
+#webDesc p{
+    background-color: rgb(30, 30, 30);
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    padding: 10px;
+}
+#webDesc{
+    padding-bottom: 30px;
+}
+#gallery{
+    display: flex;
+}
+#gallery img{
+    max-width: 33.333%;
+    height: auto;
+    width: auto\9;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+.space{
+    padding-top: 280px;
+}
+#subscribe{
+    background-color: rgb(30, 30, 30);
+    width: 40%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    padding: 10px;
+}
+#subText{
+    padding-bottom: 10px;
+    text-align: center;
+}
+#subInput{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+#subInput input{
+    margin: 0 5px 0 5px;
+    border-radius: 10px;
+    border: 1px;
+    padding: 5px;
+    background-color: rgb(40, 40, 40);
+    caret-color: white;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+footer{
+    height: 350px;
+    width: 100vw;
+    background-color: rgb(30, 30, 30);
+}
+.footerContainer{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.footerCopyright{
+    line-height: 40px;
+    padding-left: 25%;
+}
+.footerInfo{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25%;
+    padding-right: 25%;
+    line-height: 20px;
+    padding-top: 20px;
+}
+iframe{
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    border-color: white;
+    border-radius: 20px;
+}
+@media only screen and (max-width: 600px) {
+    *{
+        margin: 0;
+    }
+    header{
+        width: 100vw;
+        height: 75px;
+    }
+    header p{
+        padding-top: 2.5px;
+        font-size: 40px;
+        height: 75px;
+    }
+    #banner{
+        height: 50px;
+        width: 100vw;
+    }
+    .openingText{
+        font-size: 18px;
+    }
+    .backgroundsContainer{
+        height: 150px;
+    }
+    .background{
+        height: 150px;
+    }
+    .space{
+        padding-top: 165px;
+    }
+    #webDesc p{
+        width: 80%;
+    }
+    #webDesc{
+        padding-top: 5px;
+        padding-bottom: 20px;
+    }
+    #gallery{
+        display: inline-block;
+        padding-bottom: 20px;
+    }
+    #gallery img{
+        max-width: 100%;
+        object-fit: cover;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footerInfo{
+        display: inline-block;
+        justify-content: space-between;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    #footerText{
+        padding-top: 20px;
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+    #agePolicy{
+        position: absolute;
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 12px;
+    }
+    #subscribe{
+        background-color: rgb(30, 30, 30);
+        width: 60%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        padding: 10px;
+    }
+    #map{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 50px;
+        width: 250px;
+        height: 250px;
+        border-color: white;
+        border-radius: 20px;
+        position: relative;
+        padding-left: 25%;
+    }
+    .footerCopyright{
+        line-height: 40px;
+        padding-left: 0%;
+    }
+    .footerCopyright{
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+    }
+    footer{
+        height: 700px;
+        width: 100vw;
+        background-color: rgb(30, 30, 30);
+    }
+    #agePolicy{
+        position: absolute;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    #agePolicy img{
+        width: 40px;
+        height: 40px;
+    }
+    iframe{
+        width: 400px;
+        height: 300px;
+        border-color: white;
+        border-radius: 20px;
+    }
+  }
+@media only screen and (max-width: 320px) {
+    *{
+        margin: 0;
+    }
+    header{
+        width: 100vw;
+        height: 75px;
+    }
+    header p{
+        padding-top: 2.5px;
+        font-size: 30px;
+        height: 75px;
+    }
+    #banner{
+        height: 50px;
+        width: 100vw;
+    }
+    .openingText{
+        font-size: 16px;
+    }
+    .backgroundsContainer{
+        height: 150px;
+    }
+    .background{
+        height: 150px;
+    }
+    .space{
+        padding-top: 165px;
+    }
+    #webDesc p{
+        width: 80%;
+        font-size: 16px;
+    }
+    #webDesc{
+        padding-top: 5px;
+        padding-bottom: 20px;
+    }
+    #gallery{
+        display: inline-block;
+        padding-bottom: 20px;
+    }
+    #gallery img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footerInfo{
+        display: inline-block;
+        justify-content: space-between;
+        padding-left: 0%;
+        padding-right: 0%;
+        align-items: center;
+    }
+    #footerText{
+        padding-top: 20px;
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+    #subscribe{
+        background-color: rgb(30, 30, 30);
+        width: 70%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        padding: 10px;
+    }
+    #map{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        width: 200px;
+        height: 200px;
+        border-color: white;
+        border-radius: 20px;
+        position: relative;
+        left: 0%;
+    }
+    iframe{
+        width: 200px;
+        height: 200px;
+    }
+    .footerCopyright{
+        line-height: 40px;
+        padding-left: 0%;
+    }
+    .footerCopyright{
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+    }
+    footer{
+        height: 590px;
+        width: 100vw;
+        background-color: rgb(30, 30, 30);
+    }
+    #agePolicy{
+        position: absolute;
+        padding-top: 25px;
+        padding-left: 20px;
+    }
+    #agePolicy img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
